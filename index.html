@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
   <title>Awesome Book</title>
 </head>
+
 <body>
-  <h1>Awesome books</h1>
-<section>
-  <div>
-    <p>Lorem ipsum.</p>
-    <p>Testeroo testy</p>
-    <button aria-label="botton">Remove</button>   
-    <div></div>
-  </div>
-  <div>
-    <p>Lorem ipsum.</p>
-    <p>Testeroo testy</p>
-    <button aria-label="botton">Remove</button>
-    <div></div>
-  </div>
-  <section>
-    <form action="add-book">
-      <input type="text" name="title" placeholder="Book Title" maxlength="60" required>
-      <input type="text" name="Author" placeholder="Author name" maxlength="30" required>
-      <button type="button" >Add New</button>
-     
-      
-    </form>
+  <section class="container">
+    
+    <h1>Awesome books</h1>
+    <section class="books-container">
+      <div>
+        <p>Lorem ipsum.</p>
+        <p>Testeroo testy</p>
+        <button aria-label="botton">Remove</button>
+        <div class="line"></div>
+      </div>
+      <div>
+        <p>Lorem ipsum.</p>
+        <p>Testeroo testy</p>
+        <button aria-label="botton">Remove</button>
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <section class="add-form">
+      <form action="add-book">
+        <input type="text" name="title" placeholder="Title" maxlength="60" required>
+        <input type="text" name="Author" placeholder="Author" maxlength="30" required>
+        <button type="button">Add</button>
+      </form>
+    </section>
+
   </section>
-</section>
-  
+
 </body>
+
 </html>
