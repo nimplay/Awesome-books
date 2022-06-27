@@ -35,6 +35,10 @@ function newBook() {
   document.getElementById(btId).textContent = title.value;
   document.getElementById(baId).textContent = name.value;
   document.getElementById(rbId).textContent = 'Remove';
+
+  removeBtn.addEventListener('click', () => {
+    bookData.remove();
+  });
 }
 
 /* local storage */
@@ -53,3 +57,4 @@ addNewBook.addEventListener('click', () => {
   newBook();
   addUserData();
 });
+
