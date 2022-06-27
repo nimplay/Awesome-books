@@ -8,10 +8,9 @@
 .line {
   border-bottom: 1px solid black;
   margin: 1rem 0;
-  width: ;
 }
 
-.add-form form{
+.add-form form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
