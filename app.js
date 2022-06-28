@@ -68,7 +68,7 @@ class UI {
     bookData.appendChild(bookTitle);
     bookData.appendChild(bookAuthor);
     bookData.appendChild(removeBtn);
-  
+
     document.getElementById(btId).textContent = `"${book.title}"`;
     document.getElementById(baId).textContent = `by ${book.author}`;
     document.getElementById(rbId).textContent = 'Remove';
