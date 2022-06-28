@@ -1,17 +1,78 @@
 .container {
-  width: 40vw;
+  width: 300px;
   margin: auto;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 1rem;
+  box-shadow: 2px 2px 2px black;
 }
 
-.line {
-  border-bottom: 1px solid black;
+.container h1 {
+  text-align: center;
+}
+
+.books-container {
+  border: 2px solid black;
   margin: 1rem 0;
+  width: 100%;
+}
+
+.books-container .book-delete {
+  height: auto;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.books-container .book-delete p {
+  height: auto;
+  font-weight: 600;
+}
+
+.books-container .book-delete button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px black;
+  transition: all 0.3s ease-in-out;
+}
+
+.books-container .book-delete button:hover {
+  box-shadow: 0px 0px 0px black;
 }
 
 .add-form form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 60%;
+  margin: auto;
+}
+
+.add-form form input {
+  width: 100%;
+  border: 2px solid black;
+  padding: 0.2rem;
+  box-shadow: 2px 2px 2px black;
+}
+
+.add-form form input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+.add-form form button {
+  width: fit-content;
+  align-self: flex-end;
+  border: 2px solid black;
+  font-weight: 600;
+  box-shadow: 2px 2px 2px black;
+  transition: all 0.5s;
+}
+
+.add-form form button:hover {
+  box-shadow: 0px 0px 0px black;
 }
