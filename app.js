@@ -49,14 +49,12 @@ class UI {
     const bookTitle = document.createElement('p');
     const bookAuthor = document.createElement('p');
     const removeBtn = document.createElement('button');
-    const line = document.createElement('div');
-    bookData.className = 'book delete';
+    bookData.className = 'book-delete';
     list.appendChild(bookData);
 
     bookTitle.classList.add('book-title');
     bookAuthor.classList.add('book-author');
     removeBtn.classList.add('remove-btn');
-    line.classList.add('line');
     bookData.setAttribute('id', `dv${i}`);
     bookTitle.setAttribute('id', `bt${i}`);
     bookAuthor.setAttribute('id', `ba${i}`);
@@ -70,10 +68,9 @@ class UI {
     bookData.appendChild(bookTitle);
     bookData.appendChild(bookAuthor);
     bookData.appendChild(removeBtn);
-    bookData.appendChild(line);
-
-    document.getElementById(btId).textContent = book.title;
-    document.getElementById(baId).textContent = book.author;
+    
+    document.getElementById(btId).textContent = `"${book.title}"`;
+    document.getElementById(baId).textContent = `by ${book.author}`;
     document.getElementById(rbId).textContent = 'Remove';
   }
 
@@ -123,3 +120,5 @@ document.querySelector('#books-container').addEventListener('click', (e) => {
   // remove from store
   Store.removeBook(e.target.previousElementSibling.textContent);
 });
+
+
