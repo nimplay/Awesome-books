@@ -29,6 +29,15 @@
   font-weight: 600;
 }
 
+.add-form form button {
+  width: fit-content;
+  align-self: flex-end;
+  border: 2px solid black;
+  font-weight: 600;
+  box-shadow: 2px 2px 2px black;
+  transition: all 0.5s;
+}
+
 .books-container .book-delete button {
   background-color: white;
   color: black;
@@ -40,8 +49,12 @@
   transition: all 0.3s ease-in-out;
 }
 
+.add-form form button:hover {
+  box-shadow: 0 0 0 black;
+}
+
 .books-container .book-delete button:hover {
-  box-shadow: 0px 0px 0px black;
+  box-shadow: 0 0 0 black;
 }
 
 .add-form form {
@@ -62,17 +75,4 @@
 .add-form form input::placeholder {
   color: black;
   font-weight: 600;
-}
-
-.add-form form button {
-  width: fit-content;
-  align-self: flex-end;
-  border: 2px solid black;
-  font-weight: 600;
-  box-shadow: 2px 2px 2px black;
-  transition: all 0.5s;
-}
-
-.add-form form button:hover {
-  box-shadow: 0px 0px 0px black;
 }
