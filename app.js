@@ -101,7 +101,7 @@ addNewBook.addEventListener('click', (e) => {
 
   // validate
   if (newTitle === '' || newAuthor === '') {
-    alert('please fill in all fields');
+    alert('please fill in all empty fields');
   } else {
     const book = new Book(newTitle, newAuthor);
 
