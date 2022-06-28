@@ -70,7 +70,7 @@ class UI {
     bookData.appendChild(removeBtn);
 
     document.getElementById(btId).textContent = `"${book.title}"`;
-    document.getElementById(baId).textContent = `by ${book.author}`;
+    document.getElementById(baId).textContent = book.author;
     document.getElementById(rbId).textContent = 'Remove';
   }
 
@@ -119,4 +119,5 @@ document.querySelector('#books-container').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
   // remove from store
   Store.removeBook(e.target.previousElementSibling.textContent);
+  console.log(e.target.previousElementSibling.textContent);
 });
