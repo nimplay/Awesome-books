@@ -258,12 +258,11 @@ function currentTime() {
   mm = mm < 10 ? `0${mm}` : mm;
   ss = ss < 10 ? `0${ss}` : ss;
 
-  const time = `${hh}:${mm}+${ss} ${session}`;
+  const time = `${hh}:${mm}:${ss} ${session}`;
 
   document.getElementById('clock').innerText = `29/06/2022, ${time}`;
-  const t = setTimeout(() => {
+  setTimeout(() => {
     currentTime();
   }, 1000);
-  module.exports = t;
 }
 currentTime();
