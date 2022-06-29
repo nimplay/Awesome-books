@@ -55,6 +55,13 @@
   margin-right: 20px;
 }
 
+#clock {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  margin-top: 0.5rem;
+}
+
 .container h1 {
   text-align: center;
 }
