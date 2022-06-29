@@ -235,33 +235,35 @@ document.querySelector('#books-container').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
   // remove from store
   Store.removeBook(e.target.previousElementSibling.textContent);
-  console.log(e.target.previousElementSibling.textContent);
 });
 
 // Clock
 
 function currentTime() {
-  let date = new Date(); 
+  const date = new Date();
   let hh = date.getHours();
   let mm = date.getMinutes();
   let ss = date.getSeconds();
-  let session = "AM";
+  let session = 'AM';
 
-  if(hh == 0){
-      hh = 12;
+  if (hh === 0) {
+    hh = 12;
   }
-  if(hh > 12){
-      hh = hh - 12;
-      session = "PM";
-   }
+  if (hh > 12) {
+    hh -= 12;
+    session = 'PM';
+  }
 
-   hh = (hh < 10) ? "0" + hh : hh;
-   mm = (mm < 10) ? "0" + mm : mm;
-   ss = (ss < 10) ? "0" + ss : ss;
-    
-   let time = hh + ":" + mm + ":" + ss + " " + session;
+  hh = hh < 10 ? `0${hh}` : hh;
+  mm = mm < 10 ? `0${mm}` : mm;
+  ss = ss < 10 ? `0${ss}` : ss;
 
-  document.getElementById("clock").innerText = "29/06/2022, " + time; 
-  let t = setTimeout(function(){ currentTime() }, 1000);
+  const time = `${hh}:${mm}+${ss} ${session}`;
+
+  document.getElementById('clock').innerText = `29/06/2022, ${time}`;
+  const t = setTimeout(() => {
+    currentTime();
+  }, 1000);
+  module.exports = t;
 }
 currentTime();
