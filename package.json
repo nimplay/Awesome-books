@@ -37,7 +37,6 @@
     "aws-sign2": "^0.7.0",
     "aws4": "^1.11.0",
     "axe-core": "^4.4.2",
-    "babel-eslint": "^8.2.6",
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "babel-plugin-polyfill-corejs2": "^0.3.1",
     "babel-plugin-polyfill-corejs3": "^0.5.2",
@@ -157,11 +156,8 @@
     "escape-goat": "^2.1.1",
     "escape-string-regexp": "^1.0.5",
     "escodegen": "^2.0.0",
-    "eslint": "^8.16.0",
-    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-module-utils": "^2.7.3",
-    "eslint-plugin-import": "^2.26.0",
     "eslint-scope": "^5.1.1",
     "eslint-utils": "^3.0.0",
     "eslint-visitor-keys": "^1.3.0",
@@ -550,11 +546,7 @@
     "strnum": "^1.0.5",
     "strtok3": "^6.3.0",
     "style-search": "^0.1.0",
-    "stylelint": "^13.13.1",
     "stylelint-config-recommended": "^4.0.0",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0",
     "sugarss": "^2.0.0",
     "supports-color": "^7.2.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
@@ -639,7 +631,15 @@
     "zwitch": "^1.0.5"
   },
   "devDependencies": {
-    "hint": "^7.0.1"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^7.0.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
