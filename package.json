@@ -1,8 +1,7 @@
-{ 
+{
   "name": "awesome-books",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "index.js",
   "dependencies": {
     "abab": "^2.0.6",
@@ -238,7 +237,6 @@
     "has-tostringtag": "^1.0.0",
     "has-unicode": "^2.0.1",
     "has-yarn": "^2.1.0",
-    "hint": "^7.0.1",
     "hosted-git-info": "^5.0.0",
     "html-encoding-sniffer": "^3.0.0",
     "html-tags": "^3.2.0",
@@ -363,6 +361,7 @@
     "metaviewport-parser": "^0.2.0",
     "micromark": "^2.11.4",
     "micromatch": "^4.0.5",
+    "milsymbol": "^2.0.0",
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
     "mimic-fn": "^2.1.0",
@@ -539,10 +538,10 @@
     "sshpk": "^1.17.0",
     "ssri": "^9.0.1",
     "statuses": "^2.0.1",
+    "string_decoder": "^1.3.0",
     "string-width": "^4.2.3",
     "string.prototype.trimend": "^1.0.5",
     "string.prototype.trimstart": "^1.0.5",
-    "string_decoder": "^1.3.0",
     "strip-ansi": "^6.0.1",
     "strip-bom": "^3.0.0",
     "strip-final-newline": "^2.0.0",
@@ -639,7 +638,9 @@
     "yauzl": "^2.10.0",
     "zwitch": "^1.0.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "hint": "^7.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
