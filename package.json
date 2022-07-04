@@ -22,11 +22,10 @@
   "version": "1.0.0",
   "main": ".eslintrc.js",
   "scripts": {
-    "type":"module",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",    
+    "type": "git",
     "url": "git+https://github.com/David-Verde/Awesome-ES6-Implementation.git"
   },
   "keywords": [],
